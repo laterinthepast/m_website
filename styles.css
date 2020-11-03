@@ -1,0 +1,158 @@
+body {
+    font-family: 'Merriweather', serif;
+    min-height: 100%;
+}
+
+                                        /* fonts*/
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    padding-top: 2rem
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    text-align: center;
+}
+h4 {
+    color: black;
+}
+h4:hover {
+    color: rgb(77, 155, 87);
+}
+
+                                        /* page dividers */
+
+.divider {
+    height: 8rem;
+    align-items: center;
+}
+
+                                        /* images including background */
+
+.landing-page {
+    background: url(components/front.png) transparent no-repeat center center fixed; 
+    height: 100vh;
+    background-size:contain;
+
+    
+}
+.background {
+    background: url(components/about.png) transparent no-repeat center center; 
+    height: 100vh;
+    background-size:cover;
+}
+#contact {
+    background: url(components/contact.png) transparent no-repeat center center;     
+    min-height:100%;
+    background-size:cover;
+}
+.photo1 {
+    display: none;
+}
+
+                                        /* about me section */
+
+#about-me p {
+    padding: 15rem 0 0 20rem;
+    line-height: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+                                        /* prices section */
+
+#prices {
+    padding: 2rem 0 7rem 0;
+}
+
+                                        /* contact me section */
+
+#contact {
+    padding-top: 10rem;
+}
+.form-control-lg {
+    width: 30rem;
+    height: 15rem;
+}
+.fandlname {
+    flex-direction: column;
+    align-items: center;
+}
+.fname {
+    padding-top: 2rem;
+}
+.lname {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+.button {
+    padding-bottom: 4rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 1024px){
+    h1 {
+        font-size: 3rem;
+    }
+    #about-me p {
+        padding: 10rem 0 0 10rem;
+    }
+    #prices {
+        padding-top: 3rem;
+    }
+}
+@media only screen and (max-width: 770px){
+    h1 {
+        font-size: 2.8rem;
+    }
+    #about-me p {
+        padding: 2rem 0 0 2rem;
+    }
+    #prices {
+        padding-top: 3rem;
+    }
+}
+@media only screen and (max-width: 450px){
+    h1 {
+        font-size: 2.1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    
+    #about-me p {
+        padding: 2rem 0 0 1rem;
+        font-size: 0.9rem;
+        letter-spacing: normal;
+        font-weight: 400;
+    }
+    #prices {
+        padding-top: 3rem;
+    }
+    .photo2 {
+        display: none;
+    }
+    .photo1{
+        display: block;
+    }
+    #contact {
+        padding-top: 5rem;
+    }
+    .landing-page {
+        background:url(components/front3.jpg) center;
+        background-size: cover;
+        min-height: 100%;
+
+    }
+
+}
